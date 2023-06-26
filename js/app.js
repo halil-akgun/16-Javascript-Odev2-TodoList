@@ -1,6 +1,6 @@
-let todosDefault = ["3 Litre Su İç", "Ödevleri Yap", "EN az 3 Saat Kodlama Yap", "Yemek Yap", "50 Sayfa Kitap Oku"]
+let todosDefault = ["Drink 3 Liters of Water", "Do Homework", "Code for at least 3 Hours", "Cook", "Read 50 Pages of Book"]
 
-// tüm elementleri seçme
+// select all elements
 const input = document.querySelector("#task");
 const list = document.querySelector("#list");
 const clearButton = document.querySelector("#clear-todos");
@@ -111,7 +111,7 @@ function deleteFromStorage(deletetodo) {
 function clearAll() {
     if (confirm("emin misiniz?")) {
 
-        // List.innerHTML=""; //yavaş
+        // List.innerHTML=""; // slow
 
         while (list.firstElementChild != null) {
             list.removeChild(list.firstElementChild);
